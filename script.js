@@ -54,3 +54,7 @@
       }
 
 
+
+      function reset_(){
+        console.log('.....')
+      }

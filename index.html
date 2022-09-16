@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculadora Juros Compostos</title>
+      <style>
+         #table
+         {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         color: darkslategray;
+         }
+         th {
+         padding: 0px;
+         }
+         #form
+         {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         }
+         body{
+         font-size: x-large;
+         }
+         #para {
+         text-align: center;
+         color: darkgreen;
+         }
+         h4{
+         color: darkblue;
+         }
+         table, th, td {
+         border:1px solid black;
+         }
+         button {
+         cursor: pointer;
+         }
+         #text {
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-top: 3rem;
+         }
+      </style>
+   </head>
+   <body>
+      <form id="form">
+         <h6>Calculadora juros compostos</h6>
+         <label for="comecar_investir"> Quanto você tem para começar a investir</label>
+         <input type="number" id="comecar_investir" name="comecar_investir"  min="0" required="required"> 
+         <br>
+         <!-- <label for="investir_mes"  required>Quanto você pode investir mês?</label>
+            <input type="number" id="investir_mes" name="investir_mes" min="0" required="required">  -->
+         <br>
+         <label for="quanto_tempo">Por Quanto tempo (Meses) </label>
+         <input type="number" id="quanto_tempo" name="quanto_tempo" min="0" required="required"> 
+         <br>
+         <label for="rentabilidade">Juros (Mes) </label>
+         <input type="number" id="rentabilidade" name="rentabilidade" min="0" required="required"> 
+         <br>
+         <button type="button" id="reset" style="background-color:cornflowerblue;color:black">Reset </button><br>
+         <button type="button" id="calcular" style="background-color:cornflowerblue;color:black">Calculate </button>
+      </form>
+      <div id="text">
+      </div>
+   </body>
+   <script src="script.js"></script>
+</html>
